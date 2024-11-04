@@ -1,0 +1,31 @@
+.header-principal{
+    padding-top: 46px;
+    margin-bottom: 40px;
+    .image-hero-desktop{
+        width: 40%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .container-header-principal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-menu{
+            margin-right: 20%;
+            ul{
+                display: flex;
+                gap: 56px;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 18px;
+                }
+            }
+        }
+        .button-nav{
+            @include button;
+        }
+    }
+}
